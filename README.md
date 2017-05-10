@@ -4,6 +4,10 @@ This demo is based on the fuse ansible playbooks developed at
 
     https://github.com/rmarting/ansible-playbook-fuse
     
+Though currently it uses a fork
+
+    https://github.com/petenorth/vagrant-fuse-ansible
+    
 These require a nexus server (attempting to use a local filesystem maven repo will not work due to 
 
     https://github.com/ansible/ansible-modules-extras/issues/2547
@@ -34,5 +38,4 @@ Note that you must respond with 'yes' to trust the key and then 'redhat' as the 
     ./deploy.sh
     
 
-    
 
