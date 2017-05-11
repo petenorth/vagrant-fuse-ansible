@@ -24,3 +24,8 @@
   hosts: admin1
   tasks:
   - command: cp /vagrant/ansible.cfg /home/vagrant/ansible-playbook-fuse
+
+- name: Move fuse-deploy-bundle.yaml to ansible-playbook-fuse
+  hosts: admin1
+  tasks:
+  - command: mv /vagrant/fuse-deploy-bundle.yaml /home/vagrant/ansible-playbook-fuse
