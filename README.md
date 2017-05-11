@@ -2,7 +2,7 @@
 
 ## NOTE
 
-his version of the Vagrant file uses the ansible_local provisioner
+This version of the Vagrant file uses the ansible_local provisioner
 
 https://www.vagrantup.com/docs/provisioning/ansible_local.html
 
