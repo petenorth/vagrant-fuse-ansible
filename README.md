@@ -6,7 +6,7 @@ his version of the Vagrant file uses the ansible_local provisioner
 
 https://www.vagrantup.com/docs/provisioning/ansible_local.html
 
-There is another branch that uses plain shell scripts to run ansible (shell_
+There is another branch that uses plain shell scripts to run ansible (branch is called 'shell_based')
 
 ## Instructions
 
