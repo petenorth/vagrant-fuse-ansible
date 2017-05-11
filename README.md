@@ -1,5 +1,15 @@
 # vagrant-fuse-ansible
 
+## NOTE
+
+his version of the Vagrant file uses the ansible_local provisioner
+
+https://www.vagrantup.com/docs/provisioning/ansible_local.html
+
+There is another branch that uses plain shell scripts to run ansible (branch is called 'shell_based')
+
+## Instructions
+
 This demo is based on the fuse ansible playbooks developed at
 
 https://github.com/rmarting/ansible-playbook-fuse
@@ -28,15 +38,8 @@ Note that after git cloning the 'karaf-fuse-6.3.0' branch must be checked out, t
     
 Once this is complete then
 
-    vagrant up
-    vagrant ssh admin1
-    su - 
-    cd /vagrant
-    ./install.sh
+    vagrant up node1 admin1
     
-Note that you must respond with 'yes' to trust the key and then 'redhat' as the password of the remote host (node1.example.com, node2.example.com, node3.example.com) .
-
-    ./deploy.sh
     
 
 
