@@ -81,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     admin1.vm.network :private_network, ip: "#{NETWORK_BASE}.#{INTEGRATION_START_SEGMENT + 3}"
     admin1.vm.hostname = "admin1.example.com"
     admin1.vbguest.auto_update = false
-    admin1.vm.provision "shell", inline: "git clone https://github.com/petenorth/ansible-playbook-fuse.git"
+    admin1.vm.provision "shell", inline: "git clone https://github.com/rmarting/ansible-playbook-fuse.git"
     admin1.vm.provision "shell", inline: "sudo yum -y install epel-release"
     admin1.vm.provision "shell", inline: "sudo yum -y install ansible"
     admin1.vm.synced_folder "#{FUSE_DISTRIBUTION_FOLDER}", "/opt/rh/fuse/distribution", create: true, type: "rsync"
