@@ -14,9 +14,7 @@ This demo is based on the fuse ansible playbooks developed at
 
 https://github.com/rmarting/ansible-playbook-fuse
     
-Though currently it uses a fork
-
-https://github.com/petenorth/vagrant-fuse-ansible
+and within the bootstrap.yaml playbook you will see this repo being cloned.
     
 These require a nexus server (attempting to use a local filesystem maven repo will not work due to 
 
