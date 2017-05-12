@@ -8,7 +8,7 @@
     become: yes
     become_user: root
   - git:
-      repo: https://github.com/petenorth/ansible-playbook-fuse.git
+      repo: https://github.com/rmarting/ansible-playbook-fuse.git
       dest: ~/ansible-playbook-fuse
       force: yes
       update: yes
